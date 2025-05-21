@@ -121,4 +121,4 @@ Consultez ces pages qui exposent quelques idées sur un concept de jeu interacti
 
 * * *
 
-Conception et réalisation © 1998-2023 MRA
+Conception et réalisation © 1998-2025 MRA

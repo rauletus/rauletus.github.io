@@ -1,46 +1,26 @@
 ---
 layout: page
-title: La ligne 1
-permalink: /ligne1/
+title: Supervision
+permalink: /ia/
 ---
 
 UN RESEAU FERROVIAIRE MINIATURE POUR LA SIMULATION
 
-Après la ligne Zéro (en boucle), la ligne **Un** (en aller/retour).
+Un nouveau type de détecteur ?
 
 Présentation
 ------------
 
-La ligne 1 en étagère pour simuler le triage des wagons vers les Enbranchements Particuliers (EP).
-Un autorail fait des allers/retours en parallèle en passant par la gare.
+La détection de position du matériel repose actuellement sur de multiples solutions techniques.
 
-Le but du jeu est de recevoir un train et de délivrer avec un locotracteur des wagons conformément à une feuille de répartition, en respectant les signaux intermédiaires (tels que les carrés violets), les vitesses modérées, les coups de sifflet obligatoires, les bruitages, les attelages/dételages, les phares, etc. Tout cela permet de calculer un score.
-
-![Ligne 1](../images/ligne1.jpg)
-
-Une difficulté est de contrôler le respect des règles.
-Un ILS en entrée et sortie de gare comme pour le réseau de la ligne 0 ne convient pas ici.
-Il faut capturer les commandes digitales envoyées au locotracteur.
-Il faut aussi vérifier la bonne position des wagons.
-
-Remarque :
-Les signaux lumineux doivent être visibles du joueur en toute circonstance pour qu'il puisse les respecter.
-Si l'orientation de la voie (et donc des signaux) ne le permet pas, il faut prévoir une répétition des signaux sur un TCO.
-
-
-## Station de commande
-
-2022 : Arduino / DCC-EX / JMRI
-
-La technologie DCC NMRA est incontournable de nos jours. Il existe plusieurs systèmes prêts à l'emploi mais il est aussi possible de réaliser soi-même une station de commande avec des composants open source.
-J'ai choisi le logiciel de commande DCC-EX sur carte Arduino et le logiciel de pilotage JMRI avec ses commandes sur smartphone iOS et Android.
+La technologie peut nous permettre d'enrichir le catalogue des solutions.
 
 ## Supervision
 
 Principe : utiliser l'intelligence artificielle
 
 Le contrôle d'un scénario et du respect des règles peut être réalisé en observant le déroulement du jeu avec une caméra positionnée pour avoir une vue d'ensemble.
-Un programme d'intelligence artificielle basé sur un réseau de neurones de type "Object Detector" (Yolo v8 ou RetinaNet) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
+Un programme d'intelligence artificielle basé sur un réseau de neurones de type "Object Detector" (Yolo ou RetinaNet) a appris à reconnaitre les locos et les wagons présents à chaque photo avec leur position dans l'image. Un traitement relie la position des éléments sur la photo et la position physique des bâtiments.
 Elle peut être positionnée en surplomb, de face ou dans l'axe des voies (ou bien en vue du dessus et en utilisant des marques sur les toitures des wagons si cela peut faciliter la reconnaissance mais cela n'est pas esthétique).
 
 Fonctionnement :
