@@ -1,0 +1,82 @@
+---
+---
+@charset "UTF-8";
+
+$link-color: #0092ca;
+// $type-size-3 : 1.953em;  // ~31.248px // no effect on h1!
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// .masthead { // permet une barre de menu sticky mais PB calage hyperdocuments
+//   position: sticky;
+//   top: 0;
+//   background-color: $background-color;
+// }
+
+// @media (min-width: 64em) { // decale vers le bas toc et menu nav
+//     .sticky {
+//         top: 100px; // 6.25em
+//     }
+// }
+
+// .initial-content { // decale tout le contenu de la page yc le page__hero
+//     padding-top: 100px; // 6.25em
+// }
+
+// #main {
+//     padding-top: 100px; // 6.25em // decale le contenu de la page sous le page__hero, yc toc
+// }
+
+// .page__content p, .page__content li, .page__content dl { // NOK
+//   font-size: 0.875em; /* 14px/16=0.875em */
+// }
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 48em) { // 768px
+    html {
+        font-size:16px;
+    }
+}
+
+@media (min-width: 64em) { // 1024px
+    html {
+        font-size:16px;
+    }
+}
+
+@media (min-width: 80em) {
+    html {
+        font-size:16px;
+    }
+}
+
+.toc__menu {
+    font-size: 0.9em; // .75em
+}
+
+.masthead__menu {
+    font-size: 1.25em;
+}
+
+@media (min-width: 64em) {
+    .toc__menu {
+        font-size: 0.8em; //.6875em
+    }
+}
+
+h1 {
+  font-size: 2em; // ~30px
+  font-weight: normal;
+}
+
+.nav__sub-title {
+  font-size: 1em; // ~20px
+}  
+
+.sidebar li {
+  font-size: 0.9em;
+}

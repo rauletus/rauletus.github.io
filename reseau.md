@@ -1,9 +1,22 @@
 ---
-layout: page
-title: Réseau
+layout: single
+title: "MODELISME FERROVIAIRE ET SIMULATION"
 permalink: /reseau/
+excerpt: "Des réseaux pour le jeu"
+header:
+    overlay_image: /assets/images/headerimage.jpeg
+    image_description: "G1000"
+    caption: "Photo Rauletus"
+toc: true
+toc_label: "Réseaux"
+toc_sticky: true
+author_profile: false
+read_time: true
+sidebar:
+    nav: "mainleft"
 ---
 
+<!--
 Un réseau pour la simulation : "la ligne _Zéro_"
 
 ![](../images/logo6.png)
@@ -13,12 +26,17 @@ Un réseau pour la simulation : "la ligne _Zéro_"
 [La ligne miniZéro (depuis 2022)](#minizero)
 
 [La ligne Un (projet)](#un)
+-->
 
-En 1996, j'avais la place pour créer un réseau constitué de 7 modules et d'une coulisse permettant de réaliser une boucle, d'ou le nom de cette ligne : la ligne Zéro. Durant 5 années, j'ai pu tester mes idées concernant la simulation des opérations sous la forme d'un jeu. Après avoir déménagé en 2000, je n'avais plus assez de place pour remonter ce réseau et il a finalement été démantelé. En 2022, j'ai décidé de poursuivre quitte à utiliser un réseau beaucoup plus petit et la ligne miniZéro est alors apparue.
+En 1996, j'avais la place pour créer un réseau constitué de 7 modules et d'une coulisse permettant de réaliser une boucle, d'ou le nom de cette ligne : la **ligne Zéro**. Durant 5 années, j'ai pu tester mes idées concernant la simulation des opérations sous la forme d'un jeu supervisé par un PC. Après avoir déménagé en 2000, je n'avais plus assez de place pour remonter ce réseau et il a finalement été démantelé. 
+
+En 2022, j'ai décidé de poursuivre quitte à utiliser un réseau beaucoup plus petit et la **ligne miniZéro** est alors apparue.
 
 ## La ligne Zéro (1996-2000) {#zero}
 
 Mon **réseau imaginaire** représente une ligne SNCF reliant la capitale aux villes de la banlieue dans la partie SUD-EST dans les années 1960-1970, d'une longueur approximative de 150 kilomètres.
+
+[Cliquez ici pour voir des photos de ce réseau](/photos/)
 
 Mon réseau traverse quelques départements et une seule gare est effectivement reproduite, mais...  
 La partie reproduite est une ligne à voie unique. Il aurait été plus crédible que ce soit une ligne double mais pour des raisons financières, d'espace et de temps, j'ai préféré me limiter pour le moment à une voie unique.  
@@ -39,7 +57,9 @@ Le thème que j'ai choisi se caractérise donc ainsi :
 ![](../images/plan.gif)  
 Plan du réseau : 4,60 mètres x 2,60 mètres
 
-### La méthodologie de réalisation
+[Cliquez ici pour voir des photos de ce réseau](/photos/)
+
+### Méthodologie
 
 Les idées clés de ma méthodologie pour ce réseau sont les suivantes :
 
@@ -48,7 +68,7 @@ Les idées clés de ma méthodologie pour ce réseau sont les suivantes :
 *   réaliser puis améliorer chaque module en plusieurs étapes, par versions successives ;
 *   réaliser rapidement une version simple du réseau, permettant de tester puis de valider le concept de jeu.
 
-### La mise en oeuvre de l'exploitation
+### Exploitabilité
 
 Pour mon réseau, j'ai défini les critères suivants :
 
@@ -61,7 +81,7 @@ Pour mon réseau, j'ai défini les critères suivants :
 *   système de numérotation des trains et wagons ;
 *   gestion des wagons ouverts pleins ou vides.
 
-### L'infrastructure
+### Infrastructure
 
 L'infrastructure de mon réseau est décrite par les caractéristiques suivantes :
 
@@ -79,17 +99,13 @@ L'infrastructure de mon réseau est décrite par les caractéristiques suivantes
 *   longueur des voies de garage et à quai : 1,20 m ;
 *   pas de voie et de bâtiment entre les zones de triage et les opérateurs.
 
-La commande de mon réseau
--------------------------
-
-### Commande traditionnelle {#commande}
+### Commande analogique {#commande}
 
 J'ai commencé par utiliser deux commandes analogiques traditionnelles : d'abord une commande GMC-UF de GAUGEMASTER achetée en 1990 (et toujours en vente en 2023), c'est un modèle avec asservissement de vitesse très efficace notamment pour les vitesses réduites, ensuite une [commande "maison" avec simulation d'inertie](../images/regula.gif) associée à un générateur 50 khz "maison" pour l'éclairage constant des feux des locomotives.
 
 ![](../images/synoptique_multiplexeur.jpg)
 
 La ligne _zéro_ est découpée en trois zones électriques. Un répartiteur permet d'affecter une zone à une commande : il est constitué d'un pupitre muni en façade de commutateurs rotatifs positionnés par rapport au synoptique du réseau (à tout moment, chaque zone ne peut être commandée que par une seule commande).  
- 
 
 ### Commande digitale
 
@@ -105,9 +121,29 @@ J'ai réalisé moi-même un boîtier avec un transformateur d'alimentation pour 
 
 La commande MRC 2000 ne s'interface pas avec un ordinateur. Je ne peux donc pas utiliser un ordinateur pour piloter un train automatiquement.
 
+Il faut mentionner que tout ce matériel (MRC, LENZ et ARNOLD) est toujours fonctionnel en 2025 !
+
 ### Supervision {#supervision}
 
-A l'époque, j'ai utilisé un vieux PC 8086 avec des contacts ILS reliés directement sur le port parallèle.
+En 1998 :
+
+*   un ordinateur PC avec un port parallèle et un port série (ex : mon vieux 8086) ;
+*   un boîtier d'interface avec entrées isolées et sorties sur relais à brancher sur le port série ou parallèle du PC (ex : modèle ORD102 prêt à l'emploi de la société [ELECTROME](http://www.jclelectrome.fr/)) ;
+*   quelques contacts ILS disposés aux endroits stratégiques du réseau et en entrée/sortie de la gare (remarque : une seule locomotive peut alors être facilement contrôlée) ;
+*   l'allumage et l'extinction progressive de la lumière, en douceur, pouvait être réalisée par un module électronique (ex : kit K2657 de Velleman-kit environ 25 Euros TTC).
+
+En 2020, la technologie offre des solutions plus simples et plus puissantes :
+
+* un ordinateur PC avec ports USB et/ou WiFi ;
+* des circuits électroniques d'interface peuvent être réalisés facilement avec Arduino (ou Raspberry Pi) par exemple.
+
+**Quelques précisions :**
+
+Cette solution de supervision offre l'avantage d'être indépendante du système d'alimentation qui peut être classique ou numérique.
+
+Dans mon cas, il faut noter que le réseau était constitué d'une voie unique de longueur assez limitée (12 mètres en boucle) et d'une gare unique. Je souhaite pourtant réaliser des scénarios passant par plusieurs gares. J'ai donc adopté le principe que l'unique gare réelle peut représenter plusieurs gares fictives. Bien entendu, il faut faire preuve d'imagination mais l'imagination est de toute manière une composante essentielle du jeu ! Tout scénario passant virtuellement par plusieurs gares boucle par l'unique gare réelle existante sur le réseau. Pour aider les joueurs, l'ordinateur affiche alors le nom de la gare courante, les joueurs ne doivent pas tenir compte du nom inscrit sur le bâtiment de la gare réelle (là encore, l'ordinateur apporte une aide).
+
+Les contacts ILS ne permettant de distinguer de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance de type code à barre à la place des ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
 
 
 ![Photo du PC de supervision](../photos/victor1.jpg)
@@ -116,7 +152,7 @@ A l'époque, j'ai utilisé un vieux PC 8086 avec des contacts ILS reliés direct
 La loco du train supervisé ou un wagon est équipé d'un petit aimant permettant d'activer les contacts ILS. Dans cette version de la ligne _zéro_, un contact ILS est disposé en entrée de la gare (Est), un autre en sortie (Ouest).
  
 
-#### Programme de supervision 
+#### Programme
 
 Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :
 *   la gare virtuelle courante (entrée, sortie)
@@ -126,11 +162,14 @@ Mon programme de supervision temps-réel affiche l'heure courante accélérée, 
 *   la quantité de carburant restante (en litres)
 *   la distance parcourue depuis la gare de départ du scénario
 
+En 1998, le programme de supervision fonctionnait sur un PC MS-DOS :
+
 
 ![Copie d'écran du programme de supervision](../images/horloge51.gif)
 
 
-La commande du programme de supervision s'effectue principalement à l'aide des touches de fonction du clavier, aucune saisie manuelle n'est nécessaire pendant le jeu :
+La commande du programme de supervision s'effectuait principalement à l'aide des touches de fonction du clavier.
+Aucune saisie manuelle n'est nécessaire pendant le jeu :
 
 *   F1 : **Pause**, permet éventuellement de stopper momentanément l'horloge accélérée
 *   F2 : **Raz**, permet de recommencer le scénario courant au départ
@@ -149,15 +188,17 @@ Plusieurs scénarios différents peuvent être exécutés par le programme. Au d
 *   **Vitesse maximum autorisée** : le dépassement de la vitesse maximum autorisée sur la ligne retire 5 points à chaque contrôle de la vitesse du train, c'est-à-dire en entrée et en sortie de gare. Ainsi, le fait de "trainer" au début du scénario et "accélérer" ensuite pour rattraper son retard peut être une stratégie pénalisante si cela entraîne le dépassement de la vitesse maximum.
 *   **Carburant** : enfin, il ne faut pas tomber en panne sèche !
 
-Cet algorithme de calcul du score constitue un premier essai, il doit être amélioré. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](/operations/#documents), le meilleur score que j'ai obtenu est de 118.
+Cet algorithme de calcul du score constitue un premier essai. Déjà, le jeu est intéressant car la valeur courante du score permet d'ajuster le comportement du conducteur dans le but de ne pas avoir de pénalité trop importante, en tout cas supérieure au gain obtenu à chaque passage en gare. A titre indicatif, avec mon [scénario n°1](/operations/#documents), le meilleur score que j'ai obtenu est de 118.
 
-J'ajouterai ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score (je progresse par petites étapes pour valider les concepts progressivement).  
+A ce stade, il faut ajouter ensuite d'autres équipements sur le réseau (signaux lumineux, autres capteurs) et d'autres fonctions au programme de supervision pour exploiter ces équipements et en tenir compte dans le score.
 
 ## La ligne miniZéro (2022-2025) {#minizero}
 
 Un plateau de 1m20 x 0m85 avec un simple ovale et une seule voie de garage qui reprend et améliore toutes les idées du réseau de 2000.
 Il est facilement déplaçable pour jouer n'importe où et faire des démonstrations.
-Les mêmes scénarios de jeu précédents sont utilisables. La généralisation du DCC permet toutefois de nombreuses améliorations !
+Une moitié du ovale en façade représente la gare, l'autre moitié représente virtuellement la coulisse et l'accès à une usine.
+Les mêmes scénarios de jeu précédents sont utilisables avec des trains courts de 3 wagons.
+La généralisation du DCC et quelques astuces permises par le programme de supervision offrent un certain nombre de possibilités de jeu même dans cet espace réduit&nbsp;!
 
 
 ![La ligne miniZéro en 2025](../photos/minizero01.jpeg)
@@ -167,71 +208,41 @@ Les mêmes scénarios de jeu précédents sont utilisables. La généralisation 
 
 2022 : Arduino / DCC-EX
 
-Depuis maintenant plusieurs années, les décodeurs DCC NMRA proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives qui est devenue très utilisée. La commande MRC 2000 ne permettant de piloter qu'une seule fonction auxiliaire, un autre système est nécessaire. J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**.  
-
-
-Hardware :
-
-J'ai réalisé une station de commande complète très simplement en assemblant :
-* une carte Arduino Mega 2560
-* une carte additionnelle Motor Shield
-* une alimentation 18V (5A)
-
-Cette station à une puissance de 2A par défaut (disjoncteur intégré au logiciel DCC-EX). Cela permet de piloter 2 locomotives équipées avec les vieux décodeurs tels que ARNOLD et LENZ qui consomment beaucoup de puissance.
-
-Software :
-
-* ordinateur standard (PC ou Mac) :
-    * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
-* logiciel open source DCC-EX EX-CommandStation pour Arduino (C++)
-* logiciel open source IDE Arduino :
-    * initialisation de la carte Arduino
-    * Serial Monitor pour piloter la station en utilisant l'API
-
-Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mode SPEED 28.
+Depuis maintenant plusieurs années, les décodeurs DCC NMRA proposent en standard de nombreuses fonctions annexes (au minimum de F0 à F28) ainsi que la sonorisation des locomotives qui est devenue très utilisée. La commande MRC 2000 ne permettant de piloter qu'une seule fonction auxiliaire, un autre système est nécessaire. J'ai décidé de réaliser moi-même une centrale basée sur le logiciel [DCC-EX](https://dcc-ex.com) et la plateforme **Arduino**.
 
 ### Pilotage
 
-Le pilotage avec les commandes de l'API dans le Serial Monitor n'est pas conçu pour le jeu.
-J'utilise principalement le logiciel open source JMRI (Java Model Railroad Interface) avec la configuration suivante :
-* ordinateur standard (PC ou Mac) :
-    * connecté à la carte Arduino Mega 2560 avec un cable USB (5V et données)
-    * connecté au réseau local Wifi
-* logiciel JMRI DecoderPro ou PanelPro
-* pour la commande mobile de type "walk-around" en Wifi :
-    * serveur JMRI WiThrottle
-    * application mobile open source Engine Driver pour Android
-    * application mobile WiThrottleLite pour iOS 
+Le pilotage avec les commandes de l'API dans le Serial Monitor de l'IDE Arduino n'est pas conçu pour le jeu.
+Un outil plus évolué est nécessaire.
+J'utilise principalement le logiciel open source [JMRI (Java Model Railroad Interface)](https://www.jmri.org).
 
 JMRI permet la gestion complète d'un réseau depuis la programmation des décodeurs DCC jusqu'au pilotage des itinéraires, en passant par les cantons, les signaux, les aiguillages, etc.
-Il gère notamment ici pour mes besoins :
-* une horloge accélérée
-* des scripts d'automatisation tels que l'aller/retour d'une locomotive
-* des interfaces natives avec DCC-EX et C/MRI
-* des panneaux de contrôle et synoptiques du réseau
-* des interfaces techniques (APIs) pour l'intégrer avec d'autres logiciels
 
-Des capteurs tels que des ILS ou des détecteurs de présence par consommation de courant (j'utilise des détecteurs 5556 de Stock87) peuvent être reliés à une carte Arduino. Pour des réseaux qui le nécessitent, la librairie arduinoCMRI permet de réaliser un noeud C/MRI SMINI avec une carte Arduino. Reliée au PC avec un cable USB, JMRI peut ainsi réagir à des changements d'état de boutons et détecteurs et peut actionner des LED et des moteurs d'aiguillage.
+### Supervision JMRI
 
-### Programme de supervision
+En 2025, la technologie offre une diversité de solutions.
+J'utilise :
+* un Mac portable
+* un écran secondaire facultatif 
+* un port USB
+* le WiFi de mon domicile
+* un smartphone en guise de télécommande
+* le logiciel JMRI en interface 
+
+
+
+#### Programme YARS {#yars}
 
 Yet Another Railroad Simulator (YARS)
 
 Sans rien perdre des concepts de la version historique de 1998, j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
-
-Actuellement, YARS s'interface avec le logiciel de pilotage JMRI (Java Model Railroad Interface) de manière à le compléter fonctionnellement. JMRI offre l'avantage de s'interfacer lui-même avec les principales centrales DCC du marché. 
-De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications sur smartphones et tablettes.
-En utilisant cette interface, j'ai développé facilement mon propre module au sein de YARS pour commander les locomotives dans les situations de jeu ou cela est utile.
-En complément, JMRI affiche facilement l'indispensable horloge accélérée ainsi qu'un synoptique et/ou un tableau de contrôle du réseau.
-YARS disposant de son propre serveur web intégré, il peut afficher en temps-réel les informations utiles au déroulement du jeu dans un navigateur standard, sur un voire plusieurs écrans simultanément.
-
 
 ![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)
 
 
 #### Scénarios
 
-De multiples scénarios sont possibles et sont décrits chacun par un fichier décrivant la liste des gares à parcourir, les horaires de passage, la vitesse maximum autorisée sur la ligne, etc.
+De multiples scénarios sont possibles et sont définis chacun par un fichier décrivant la liste des gares à parcourir, les horaires de passage, la vitesse maximum autorisée sur la ligne, etc.
 
 #### Calcul du score
 
@@ -244,9 +255,10 @@ Les règles du jeu doivent être respectées, le score est calculé ainsi (versi
     * Feux allumés : +100 points
     * Feux éteints par la suite : les 100 points sont perdus, il n'est pas possible de gagner plusieurs fois 100 points en allumant puis en éteignant les feux de la locomotive.
     * Klaxon (F2) en entrant dans la gare : +10 points à chaque coup de klaxon.
-* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé (la locomotive s'arrête toute seule). Il n'est pas possible de ravitailler en roulant, la locomotive doit être à l'arrêt en gare (sachant que l'arrêt en pleine ligne est interdit).
+* **Carburant** : Une panne de fuel est éliminatoire et le scénario est automatiquement terminé (la locomotive s'arrête toute seule). En l'absence d'un point de ravitaillement disponible (dépôt de locomotives, station fuel), on peut simplifier la règle : la locomotive doit être à l'arrêt en gare (le programme ne permet pas de ravitailler en roulant et  l'arrêt en pleine ligne est interdit).
 
-Mon meilleur score est 230 points avec le scénario n°1 allant de Gare du Lion à Melan.
+Mon meilleur score est 230 points avec mon [scénario n°1](/operations/#documents) allant de Gare du Lion à Melan
+(naturellement, la formule de calcul étant différente, ce score n'est pas comparable à la version précédente).
 
 ## La ligne Un (projet) {#un}
 
@@ -260,8 +272,8 @@ Le but du jeu est de recevoir un train et de délivrer avec un locotracteur des 
 ![Ligne 1](../images/ligne1.jpg)
 
 Une difficulté est de contrôler le respect des règles.
-Il faut capturer les commandes digitales envoyées au locotracteur.
-Il faut aussi vérifier la bonne position des wagons.
+Il faut capturer toutes les commandes digitales envoyées au locotracteur, ce que mon programme YARS sait déjà faire, puis il faut définir et programmer les règles spécifiques de calcul du score. 
+Il faut aussi vérifier la bonne position des wagons de manière assez précise. J'envisage une technologie particulière pour ce faire. 
 
 Remarque :
 Les signaux lumineux doivent être visibles du joueur en toute circonstance pour qu'il puisse les respecter.

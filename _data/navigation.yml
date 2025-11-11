@@ -1,0 +1,41 @@
+main:
+  - title: "Simulation"
+    url: /operations/
+  - title: "Jeux"
+    url: /reglement/
+  - title: "Réseaux"
+    url: /reseau/
+  - title: "Technos"
+    url: /techno/
+  - title: "Ressources"
+    url: /ressources/
+  - title: "Contact"
+    url: /welcome/
+
+mainleft:
+  - title: "Menu"
+    children:
+      - title: "Simulation"
+        url: /operations/
+      - title: "Jeux"
+        url: /reglement/
+      - title: "Réseaux"
+        url: /reseau/
+      - title: "Technos"
+        url: /techno/
+      - title: "Ressources"
+        url: /ressources/
+      - title: "Contact"
+        url: /welcome/
+
+techno:
+  - title: "Software"
+    children:
+      - title: "JMRI"
+        url: /jmri/
+  - title: "Hardware"
+    children:
+      - title: "Arduino"
+        url: /techno/arduino/
+      - title: "DCC"
+        url: /techno/dcc/

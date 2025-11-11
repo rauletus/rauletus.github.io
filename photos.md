@@ -1,15 +1,17 @@
 ---
-layout: page
+layout: single
 title: Photos
 permalink: /photos/
 ---
 
+## La ligne 0
 
-Voici quelques photos de mon réseau, dans l'ordre chronologique.
+Voici quelques photos de mon réseau en 1998-2000, dans l'ordre chronologique.
+Le réseau a ensuite été démantelé suite à déménagement.
 
   
 ![Vue de face de la future gare sur une pré-maquette (début 1998)](../photos/garev0.jpg)  
-La première séance de photos (début 1998) : **vue de face de la future gare sur cette pré-maquette**, avec un train d'hydrocarbures tiré par une 63000 (Roco) et et 66000 (Jouef) en unité multiple. Le plan des voies n'était pas encore définitif. Cette pré-maquette, réalisée avec des photocopies d'élements de voie Peco punaisées sur un soubassement en carton m'a permis de vérifier la faisabilité de mon plan de voies théorique, en particulier le bon raccordement des aiguilles. Les bâtiments provisoires réalisés en carton m'ont permis de vérifier la bonne cohérence du décor et la répartition des volumes. La base des modules est déjà réalisée, ainsi que le fond de décor, l'éclairage est déjà mis en place au plafond.
+La première séance de photos (début 1998) : **vue de face de la future gare sur cette pré-maquette**, avec un train d'hydrocarbures tiré par une 63000 (Roco) et et 66000 (Jouef) en unité multiple (évidemment, cet assemblage n'est pas réaliste mais je n'avais rien de plus). Le plan des voies n'était pas encore définitif. Cette pré-maquette, réalisée avec des photocopies d'élements de voie Peco punaisées sur un soubassement en carton m'a permis de vérifier la faisabilité de mon plan de voies théorique, en particulier le bon raccordement des aiguilles. Les bâtiments provisoires réalisés en carton m'ont permis de vérifier la bonne cohérence du décor et la répartition des volumes. La base des modules est déjà réalisée, ainsi que le fond de décor, l'éclairage est déjà mis en place au plafond.
 
   
 ![Vue du module de la gare vers la droite (été 1998)](../photos/garev1.jpg)  

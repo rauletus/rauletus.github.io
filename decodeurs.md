@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: single
 title: Montage des decodeurs DCC
 permalink: /decodeurs/
 ---
 
 L'utilisation d'une commande numérique nécessite l'installation de décodeurs à bord des locomotives.  
-L'installation d'un décodeur dans une locomotive nécessite des modifications dans le cablage pré-existant du moteur et des feux, et parfois également quelques modifications pour arriver à loger le décodeur dans la caisse.
+Lorsque la machine n'est pas déjà pré-équipée d'un connecteur standard (ce qui reste le cas pour les matériels anciens), l'installation d'un décodeur dans une locomotive nécessite des modifications dans le cablage pré-existant du moteur et des feux, et parfois également quelques modifications pour arriver à loger le décodeur dans la caisse.
 
 Comment choisir son décodeur ?
 ------------------------------
@@ -32,13 +32,17 @@ Toutefois, il faut noter que certaines machines peuvent se passer de l'asserviss
 Comment installer son décodeur à bord ?
 ---------------------------------------
 
+**Si la machine est déjà pré-équipée d'un connecteur standard pour les décodeurs DCC, il suffit alors de simplement brancher le décodeur sur le connecteur et de réaliser des tests de bon fonctionnement.** Les variables de configuration du décodeur (CV) peuvent être ajustées par la suite.
+
+Si la machine n'est pas équipé d'un connecteur, alors des travaux d'installation et de connexion électrique sont nécessaires et sont décrit ci-dessous.
+
 ### Matériel nécessaire
 
 L'installation d'un décodeur nécessite de savoir faire des soudures à l'étain et donc de posséder un petit fer à souder (30 W maxi). Du petit cable électrique de couleur peut également être nécessaire, du même diamètre que les cables en sortie du décodeur.
 
 ### Préparation
 
-Le cablage doit obligatoirement être modifié ce qui se traduit par la suppression de certains cables électriques et éventuellement la coupure de certaines pistes sur les circuits imprimés.  
+Le cablage de la machine doit obligatoirement être modifié ce qui se traduit par la suppression de certains cables électriques et éventuellement la coupure de certaines pistes sur les circuits imprimés.  
 Il faut bien étudier le schéma électrique avant de procéder à l'installation et faire un schéma du cablage et des circuits imprimés d'origine. Il faut compléter cette étude par une détection systématique des liaisons électriques provoquées par le chassis métalique, qui doivent éventuellement être neutralisées.  
 Ensuite, il faut établir le nouveau plan de cablage, déterminer les coupures à effectuer sur les circuits imprimés et bien vérifier avant les travaux qu'il n'y a pas d'erreur dans la conception de ce nouveau cablage.
 
@@ -47,7 +51,7 @@ Ensuite, il faut établir le nouveau plan de cablage, déterminer les coupures �
 Maintenant, il faut réaliser les transformations et réaliser le nouveau cablage.  
 Il est utile de procéder par étapes, par exemple en ne réalisant en premier que les transformations pour l'alimentation du moteur, sans l'éclairage qui peut être réalisé dans une seconde étape.  
 Il faut éviter de couper trop court les fils du décodeur et il faut s'abstenir de déssouder les fils du décodeur dans le but de souder d'autres fils : les soudures sont extrêmement fines donc très difficiles à faire et les composants miniatures sont très fragiles, ils risqueraient de ne pas supporter la chaleur du fer à souder à proximité !  
-**Bien vérifier les branchements avant de faire un essai car un court-circuit peut être fatal au décodeur s'il ne possède pas de protection contre les courts-circuits.**  
+**Bien vérifier les branchements avant de faire un essai car un court-circuit peut être fatal au décodeur en particulier s'il ne possède pas de protection contre les courts-circuits.**  
 Retirer les résistances, selfs ou diodes éventuelles qui pré-existent dans la cablage d'origine du moteur.
 
 ### Premier essai
