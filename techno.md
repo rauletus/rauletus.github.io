@@ -35,8 +35,8 @@ Les principes qui guident mes choix sont les suivants :
 Architecture
 ------------
 
-Les principaux composants de ma solution à date sont présentés dans le schéma ci-dessous.
-Je cherche à utiliser le plus possible de composants prêts à l'emploi afin de développer moi-même le minimum de choses.
+Les principaux composants de ma solution actuelle sont présentés dans le schéma de principe ci-dessous.
+Je cherche toujours à utiliser le plus possible de composants prêts à l'emploi afin de développer moi-même le minimum de choses.
 
 ![Architecture](../images/architecture_globale.jpg)
 
@@ -45,14 +45,16 @@ J'ai également conçu et réalisé le programme Simulateur (YARS).
 
 ## Commande digitale DCC {#dccex}
 
+Ma centrale est basée sur le logiciel [DCC-EX](https://dcc-ex.com).
+
 Hardware :
 
 J'ai réalisé une station de commande complète très simplement en assemblant :
 * une carte Arduino Mega 2560
-* une carte additionnelle Motor Shield
+* une carte additionnelle DCC-EX EX-MotorShield8874 (5A)
 * une alimentation 18V (5A)
 
-Cette station à une puissance suffisante pour piloter sans difficulté plusieurs locomotives et des accessoires DCC.
+Cette station à une puissance suffisante pour piloter sans difficulté plusieurs locomotives et de nombreux accessoires DCC.
 
 Software :
 
@@ -63,15 +65,15 @@ Software :
     * initialisation de la carte Arduino
     * Serial Monitor pour piloter la station en utilisant l'API
 
-Pour être compatible avec les anciens décodeurs ARNOLD, il faut utiliser le mode SPEED 28.
+Pour être compatible avec les anciens décodeurs (par exemple les décodeurs ARNOLD installés dans certaines de mes locomotives), il faut simplement utiliser le mode SPEED 28 de DCC-EX.
 
 ## Logiciel de pilotage de réseau ferroviaire {#jmri}
 
 Le pilotage avec les commandes de l'API dans le Serial Monitor de l'IDE Arduino n'est pas conçu pour le jeu.
 
 Une bonne idée est alors d'utiliser un logiciel de pilotage de réseau ferroviaire capable de s'interconnecter avec la commande digitale.
-J'utilise le logiciel open source JMRI (Java Model Railroad Interface).
-JMRI permet la gestion complète d'un réseau depuis la programmation des décodeurs DCC jusqu'au pilotage des itinéraires, en passant par les cantons, les signaux, les aiguillages, etc.
+J'utilise le logiciel open source [JMRI (Java Model Railroad Interface)](https://www.jmri.org).
+JMRI permet la gestion complète d'un réseau depuis la programmation des décodeurs DCC jusqu'au pilotage des itinéraires et la simulation de trafic, en passant par les cantons, les signaux, les aiguillages, etc.
 
 JMRI gère notamment ici pour mes besoins :
 * une horloge accélérée
@@ -104,14 +106,14 @@ Yet Another Railroad Simulator (YARS)
 
 Sans rien perdre des concepts de la version historique de 1998 (présentée dans la rubrique dédiée aux [Réseaux](/reseau.md)), j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
 
-![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)Démonstrateur Yet Another Railroad Simulator (YARS)
+![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)Démonstrateur : Yet Another Railroad Simulator (YARS)
 
-Actuellement, le programme YARS s'interface avec le logiciel de pilotage JMRI (Java Model Railroad Interface) de manière à le compléter fonctionnellement.
+Actuellement, le programme YARS s'interface avec le logiciel de pilotage [JMRI (Java Model Railroad Interface)](https://www.jmri.org) de manière à le compléter fonctionnellement.
 
 JMRI offre l'avantage de s'interfacer lui-même avec les principales centrales DCC du marché, ainsi que les protocoles de communication standards et peut ainsi constituer une véritable plateforme d'intégration. 
 De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications sur smartphones et tablettes.
 
-En utilisant cette interface de JMRI, j'ai développé facilement mon propre module au sein de YARS pour récupérer les données de vitesse et de direction des locomotives et pour les piloter dans les situations de jeu ou cela est utile (par exemple pour les stopper pour simuler une panne de carburant).
+En utilisant cette interface de JMRI, j'ai développé plus facilement mon propre module au sein de YARS pour récupérer les données de vitesse et de direction des locomotives sous le contrôle des joueurs et pour les piloter dans les situations de jeu ou cela est utile (par exemple pour les stopper pour simuler une panne de carburant).
 
 A l'aide de ce module, j'ai également réalisé un outil de calibration des locomotives me permettant de générer graphiquement les courbes de vitesse en fonction des crans DCC. Cela permet de mieux comprendre leur comportement et donne des indications bien utiles lorsqu'il est nécessaire d'ajuster les CV qui contrôlent les vitesses (notamment la Speed Table).
 

@@ -71,7 +71,7 @@ Cette coulisse correspond à la gare cachée de certains réseaux modèles, qui 
 *   formation des convois ;
 *   remplissage ou vidage des wagons (simulation de l'activité des usines extérieures).
 
-L'idée de coulisse active m'est venue d'un article intitulé "Flexible operation with a fiddle yard" by John Ozanich dans Model Railroad Planning 1995, un magazine annuel publié par **[Kalmbach Publishing Co.](http://www.kalmbach.com/)** (USA).
+L'idée de coulisse active m'est venue d'un article intitulé "Flexible operation with a fiddle yard" by John Ozanich dans Model Railroad Planning 1995, un magazine annuel publié par Kalmbach Publishing Co. (USA).
 
 ### Les sites et bâtiments
 
@@ -136,7 +136,7 @@ On s'aperçoit que si l'ordinateur assure tous les mouvements, on se retrouve al
 
 Il est possible d'exploiter cette idée avec peu de moyens : le simple aller-retour d'un autorail (ou d'une rame réversible) du réseau vers l'extérieur, cadencé par un mécanisme électronique voire électrique (relais, condensateurs) constitue déjà un trafic voyageurs minimal à horaires régulier.
 
-Il est également possible, dans le cas d'un réseau en boucle, de faire tourner en permanence un autorail à vitesse réduite, pour simuler un trafic voyageurs minimal à horaires régulier (cette idée m'est venue d'un article intitulé "Continuous running on a point-to-point railroad" dans Model Railroad Planning 1996, un magazine annuel publié par **[Kalmbach Publishing Co.](http://www.kalmbach.com/)** - USA).
+Il est également possible, dans le cas d'un réseau en boucle, de faire tourner en permanence un autorail à vitesse réduite, pour simuler un trafic voyageurs minimal à horaires régulier. Cette idée m'est venue d'un article intitulé "Continuous running on a point-to-point railroad" dans Model Railroad Planning 1996, un magazine annuel publié par Kalmbach Publishing Co. (USA).
 
 ### Allongement artificiel des durées
 
@@ -280,7 +280,7 @@ L'intelligence nécessaire pour construire des scénarios pertinents et intéres
 2025 :
 
 Toutefois, j'ai découvert récemment que de nouvelles solutions sont apparues depuis quelques années. 
-Le module OperationsPro du logiciel JMRI comporte l'intelligence nécessaire pour construire des scénarios variables dont l'objectif est d'écouler un trafic de marchandises, ou de voyageurs, entres les gares et les EP d'un réseau. Le module génère les feuilles destinées au conducteurs et au chef de circulation.
+Le module **OperationsPro** du logiciel [JMRI (Java Model Railroad Interface)](https://www.jmri.org) comporte l'intelligence nécessaire pour construire et exécuter des scénarios variables dont l'objectif est d'écouler un trafic de marchandises, ou de voyageurs, entres les gares et les EP d'un réseau. Le module génère les feuilles destinées au conducteurs et au chef de circulation.
 
 
 ## Les documents pour la simulation {#documents}
