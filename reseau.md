@@ -241,7 +241,7 @@ Yet Another Railroad Simulator (YARS)
 
 Sans rien perdre des concepts de la version historique de 1998, j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
 
-![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)
+![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)Démonstrateur : Yet Another Railroad Simulator (YARS) - mars 2025
 
 [Une description plus détaillée de YARS est présentée ici](/techno/#yars) dans les pages consacrées aux technologies.
 

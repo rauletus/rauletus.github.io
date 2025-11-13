@@ -10,4 +10,4 @@ Mon inspiration est venue très tôt de modélistes américains qui poussent le 
 
 Depuis 2025, j'ai un nouveau projet de réseau en cours de développement me permettant de tester de nouvelles solutions plus simples à mettre en oeuvre mais aussi plus complètes en termes de simulation.
 
-<p>Email : <a href="mailto:michel.rauletus@orange.fr">contact@rauletus.com</a></p>
+<p>Email : <a href="mailto:rauletus@orange.fr">contact@rauletus.com</a></p>
