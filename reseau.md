@@ -243,6 +243,7 @@ Sans rien perdre des concepts de la version historique de 1998, j'ai développé
 
 ![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)
 
+[Une description plus détaillée de YARS est présentée ici](/techno/#yars) dans les pages consacrées aux technologies.
 
 #### Scénarios
 
