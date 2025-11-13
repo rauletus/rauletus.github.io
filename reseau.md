@@ -125,6 +125,8 @@ Il faut mentionner que tout ce matériel (MRC, LENZ et ARNOLD) est toujours fonc
 
 ### Supervision {#supervision}
 
+Pour mettre en oeuvre mes idées concernant le Jeu, j'ai réalisé mon propre système de supervision décrit ci-dessous.
+
 
 ![Photo du PC de supervision en 1998](../photos/victor1.jpg)
 
