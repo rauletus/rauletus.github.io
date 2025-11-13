@@ -230,9 +230,9 @@ En 1995, les solutions qu'on pouvait facilement se procurer n'étaient pas nombr
 
 Ensuite, le contrôle des temps de passage en gare nécessite une mesure relativement précise mais le temps défile vite et je perdais du temps à noter sur ma feuille les heures de passage pendant que je ne pouvais pas réguler la vitesse de mon train.
 Parfois, accaparé par la conduite de mon train, je ratais le contrôle d'un passage et cela générait un doute sur les heures relevées.
-J'ai donc profité de mon PC pour détecter automatiquement l'heure d'entrée du train en gare. Tant qu'à faire, je devais indiquer au programme la liste des gares à traverser dans l'ordre chronologique pour qu'il affiche l'heure de passage associée à chaque gare. Le train était détecté avec un ILS en entrée de gare ce qui était alors le plus simple à mettre en oeuvre.
+J'ai donc profité de mon PC pour détecter automatiquement l'heure d'entrée du train en gare. Tant qu'à faire, je devais indiquer au programme la liste des gares à traverser dans l'ordre chronologique pour qu'il affiche l'heure de passage associée à chaque gare. Le train était détecté avec un capteur ILS en entrée de gare ce qui était alors le plus simple à mettre en oeuvre.
 
-Mes scénarios prévoyaient des arrêts prolongés dans certaines gares de passage pour échanger des wagons. Ces arrêts étant beaucoup plus longs qu'un simple arrêt voyageur de 2 minutes, il devenait également utile de noter l'heure de sortie de la gare ce que j'ai facilement réalisé avec un deuxième ILS en sortie de gare.
+Mes scénarios prévoyaient des arrêts prolongés dans certaines gares de passage pour échanger des wagons. Ces arrêts étant beaucoup plus longs qu'un simple arrêt voyageur de 2 minutes, il devenait également utile de noter l'heure de sortie de la gare ce que j'ai facilement réalisé avec un deuxième capteur ILS en sortie de gare.
 
 Mon programme ayant la liste des gares à parcourir et les heures de passage, je pouvais calculer l'avance ou le retard des trains à condition d'ajouter ces horaires dans mes fichiers de scénarios. Puis avec la connaissance des heures d'entrée et de sortie, je pouvais alors calculer la vitesse à l'échelle accélérée de mes trains. Puis je pouvais calculer la distance cumulée parcourue. Puis je pouvais calculer une consommation simulée de carburant, etc.
 
