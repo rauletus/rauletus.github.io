@@ -125,17 +125,16 @@ Il faut mentionner que tout ce matériel (MRC, LENZ et ARNOLD) est toujours fonc
 
 ### Supervision {#supervision}
 
+
+![Photo du PC de supervision en 1998](../photos/victor1.jpg)
+
+
 En 1998 :
 
 *   un ordinateur PC avec un port parallèle et un port série (ex : mon vieux PC 8086 MS/DOS) ;
 *   un boîtier d'interface à brancher sur le port série ou parallèle du PC et permettant d'activer des relais électriques (ex : modèle ORD102 prêt à l'emploi de la société [ELECTROME](http://www.jclelectrome.fr/)) ;
 *   quelques capteurs ILS disposés entre les rails aux endroits stratégiques du réseau et notamment en entrée/sortie de la gare ;
 *   l'allumage et l'extinction progressive de la lumière, en douceur, pouvait être réalisée par un module électronique (ex : kit K2657 de Velleman-kit environ 25 Euros TTC).
-
-
-
-![Photo du PC de supervision](../photos/victor1.jpg)
-
 
 La locomotive du train supervisé (ou un wagon) est équipé d'un petit aimant collé sous son châssis permettant d'activer au passage les capteurs ILS disposés entre les rails. Dans cette version de la ligne _zéro_, un contact ILS est disposé en entrée de la gare (Est), un autre en sortie (Ouest). Limitation : cette solution simpliste ne permet pas d'identifier la locomotive mais seulement de détecter le passage du train.
 
