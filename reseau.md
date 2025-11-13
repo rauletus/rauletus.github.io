@@ -156,7 +156,7 @@ Dans mon cas, il faut noter que ce réseau était constitué d'une voie unique d
 
 Les capteurs ILS ne permettant de superviser de manière simple qu'une seule locomotive, les joueurs conducteurs doivent réaliser le plan prévu au tableau horaire chacun leur tour pour que le programme puisse calculer leur score (cette contrainte n'enlève pas d'intérêt au jeu car plusieurs joueurs sont requis pour exécuter ce type de scénario : un conducteur, un contrôleur pour les aiguillages et un chef de gare). Toutefois, le système reste évolutif car il faut noter que l'utilisation d'un système de reconnaissance utilisant des étiquettes QR-Code ou RFID sous chaque locomotive ou la technologie de rétro-signalisation RailCom à la place des capteurs ILS permettrait alors au programme de gérer simultanément plusieurs trains, donc plusieurs joueurs.
 
-#### Programme
+#### Programme {#pascal}
 
 Mon programme de supervision temps-réel affiche l'heure courante accélérée, détecte les changements d'état des contacts ILS, et affiche en entrée et en sortie de gare :
 *   la gare virtuelle courante (entrée, sortie)
