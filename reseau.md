@@ -141,10 +141,11 @@ En 1998 :
 La locomotive du train supervisé (ou un wagon) est équipé d'un petit aimant collé sous son châssis permettant d'activer au passage les capteurs ILS disposés entre les rails. Dans cette version de la ligne _zéro_, un contact ILS est disposé en entrée de la gare (Est), un autre en sortie (Ouest). Limitation : cette solution simpliste ne permet pas d'identifier la locomotive mais seulement de détecter le passage du train.
 
 
-En 2020, la technologie offre des solutions plus simples et bien plus puissantes :
+En 2020, la technologie offre naturellement en comparaison des solutions plus simples et bien plus puissantes, notamment :
 
 * un ordinateur PC possède en général des ports USB ou Bluetooth et une connexion WiFi ;
-* il existe désormais de nombreux modules électroniques prêts à l'emploi proposés par de nombreux fournisseurs ;
+* le SmartPhone et la tablette ont été inventés et permettent de piloter les locomotives, les aiguillages, etc. ;
+* il existe désormais des technologies standardisées mises en oeuvre pour le modélisme ferroviaire par de nombreux modules électroniques prêts à l'emploi proposés par une multitude de fournisseurs ;
 * des circuits électroniques d'interface peuvent aussi être réalisés soi-même de plus en plus facilement avec des modules à base de micro-controleurs Arduino (ou Raspberry Pi) par exemple.
 
 **Quelques précisions :**
