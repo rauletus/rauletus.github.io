@@ -104,7 +104,7 @@ J'utilise JMRI avec la configuration suivante :
 
 Yet Another Railroad Simulator (YARS)
 
-Sans rien perdre des concepts de la version historique de 1998 (présentée dans la rubrique dédiée aux [Réseaux](/reseau.md)), j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
+Sans rien perdre des concepts de la version historique de 1998 (présentée dans la rubrique dédiée aux [Réseaux](/reseau/#supervision)), j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
 
 ![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)Démonstrateur : Yet Another Railroad Simulator (YARS)
 
