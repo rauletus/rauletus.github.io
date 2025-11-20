@@ -106,7 +106,7 @@ Yet Another Railroad Simulator (YARS)
 
 Sans rien perdre des concepts de la version historique de 1998 ([présentée ici](/reseau/#pascal)), j'ai développé ce nouveau programme de supervision du jeu (appelé désormais YARS) fondé sur les technologies numériques les plus récentes. La version actuelle (mars 2025) est à considérer comme un premier prototype opérationnel, qui doit évidemment poursuivre son évolution.
 
-![Copie d'écran du programme de supervision avec JMRI](../images/yars.png)Démonstrateur : Yet Another Railroad Simulator (YARS)
+![Copie d'écran du programme de supervision avec JMRI](../images/yarsoo20251119.png)Démonstrateur : Yet Another Railroad Simulator (YARS)
 
 Actuellement, le programme YARS s'interface avec le logiciel de pilotage [JMRI (Java Model Railroad Interface)](https://www.jmri.org) de manière à le compléter fonctionnellement. Il supervise le déroulement du Jeu en temps-réel.
 
