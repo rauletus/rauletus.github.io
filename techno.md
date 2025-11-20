@@ -110,15 +110,21 @@ Sans rien perdre des concepts de la version historique de 1998 ([présentée ici
 
 Actuellement, le programme YARS s'interface avec le logiciel de pilotage [JMRI (Java Model Railroad Interface)](https://www.jmri.org) de manière à le compléter fonctionnellement. Il supervise le déroulement du Jeu en temps-réel.
 
+JMRI affiche l'indispensable horloge accélérée ainsi qu'un synoptique et/ou un tableau de contrôle du réseau.
+Le synoptique est animé en temps-réel. Au gré de l'utilisateur, il affiche les cantons occupés ainsi que l'état des signaux qui est calculé à partir de l'occupation des cantons, de la position des aiguilles, des vitesses autorisées, etc.
+JMRI peut également afficher n'importe quel panneau nécessaire, comme ici le tableau horaire du scénario par exemple.
+
+YARS affiche en temps-réel les informations utiles au déroulement du scénario et du jeu. Un menu de contrôle permet de choisir le scénario et d'activer l'ensemble des fonctions de simulation pendant son déroulement.
+Les fenêtres gérées par JMRI et celles gérées par YARS peuvent être agencées ensemble sur l'écran selon les besoins.
+YARS disposant de son propre serveur web intégré, il affiche nativement les informations dans un navigateur standard. Ce peut être sur n'importe quel device connecté en WiFi au réseau local (PC, tablette, etc.), et sur un ou plusieurs écrans simultanément.
+
 JMRI offre l'avantage de s'interfacer lui-même avec les principales centrales DCC du marché, ainsi que les protocoles de communication standards et peut ainsi constituer une véritable plateforme d'intégration. 
-De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications sur smartphones et tablettes.
+De plus, il offre également à son niveau une interface et un protocole de communication permettant le pilotage des locomotives et accessoires avec divers moyens de télécommande et notamment des applications dédiées sur smartphones et tablettes.
 
 En utilisant cette interface de JMRI, j'ai développé plus facilement mon propre module au sein de YARS pour récupérer les données de vitesse et de direction des locomotives sous le contrôle des joueurs et pour les piloter dans les situations de jeu ou cela est utile (par exemple pour les stopper pour simuler une panne de carburant). Toutes les commandes sont récupérées informant YARS lorsque le conducteur de la locomotive actionne n'importe quelle touche fonction : allumage des phares, utilisation des klaxons, etc.
 
 A l'aide de ce module, j'ai également réalisé un outil de calibration des locomotives me permettant de générer graphiquement les courbes de vitesse en fonction des crans DCC (comme cela se trouve dans certains logiciels de pilotage de trains miniatures). Cela permet de mieux comprendre leur comportement et donne des indications bien utiles lorsqu'il est nécessaire d'ajuster les CV qui contrôlent les vitesses (notamment la Speed Table).
 
-En complément, JMRI affiche facilement l'indispensable horloge accélérée ainsi qu'un synoptique et/ou un tableau de contrôle du réseau.
-YARS disposant de son propre serveur web intégré, il peut afficher en temps-réel les informations utiles au déroulement du jeu dans un navigateur standard sur n'importe quel device connecté en WiFi au réseau local (PC, tablette, etc.), sur un ou plusieurs écrans simultanément.
 
 Consultez ces pages qui présentent davantage de détails :
 * Hardware
