@@ -140,7 +140,11 @@ Il est également possible, dans le cas d'un réseau en boucle, de faire tourner
 
 ### Allongement artificiel des durées
 
-Nos réseaux étant le plus souvent assez comprimés, les distances entre les gares sont très courtes (quelques mètres). En jouant sur le facteur d'accélération du temps, à l'aide d'une horloge accélérée, on simule des [tableaux horaires](/operations/#documents) réalistes (avec un facteur 12 : 5 minutes réelles sont considérées comme 1 heure simulée et 1 mètre réel représente 1 kilomètre simulé), mais il n'empêche que les durées réelles des trajets, celles qui permettent aux opérateurs de préparer les tâches suivantes, sont courtes : 10 mètres réels de voie représentent 10 kilomètres parcourus approximativement en 30 secondes réelles à une vitesse simulée de 60 kilomètres / heure. Ca ne laisse pas beaucoup de temps pour basculer les aiguilles, dégager les voies, se préparer aux mouvements suivants, le tout sans se tromper !
+Nos réseaux étant le plus souvent assez comprimés, les distances entre les gares sont généralement courtes (cela se compte en mètres). En jouant sur le facteur d'accélération du temps, à l'aide d'une horloge accélérée, on peut simuler des [tableaux horaires](/operations/#documents) relativement réalistes.
+
+Avec un facteur accélération de 12 par exemple : 5 minutes de jeu sont considérées comme 1 heure simulée et 1 mètre du réseau représente 1 kilomètre de voie réelle. Mais les durées réelles des opérations sur le réseau, celles qui permettent aux opérateurs/joueurs de préparer les tâches suivantes, sont également raccourcies : 10 mètres de voie du réseau représentent 10 kilomètres parcourus approximativement en 30 secondes réelles à une vitesse simulée de 60 kilomètres / heure. Ca ne laisse pas beaucoup de temps pour basculer les aiguilles, dégager les voies, se préparer aux mouvements suivants, le tout sans se tromper !
+
+J'ai testé cela sur deux réseaux et plusieurs scénarios de nature différente (trains de voyageurs et trains de marchandises). L'expérience montre qu'il est nécessaire de choisir le facteur d'accélération en fonction du scénario et du trajet simulé, ainsi naturellement que de la structure du réseau : j'utilise généralement un facteur 12 ou 6 ou 4. Il faut également augmenter les durées prévues pour les arrêts en gare (1 minute réelle a minima est nécessaire) ou les manoeuvres dans les embranchements ou les gares de triage pour compenser.
 
 ## La conception du réseau pour le jeu {#conception}
 
