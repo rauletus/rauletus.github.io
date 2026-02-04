@@ -301,13 +301,12 @@ Pour ce premier tableau, je me suis inspiré du formulaire de type _Timetable_ p
 
 ![Tableau horaire / Timetable (20 Ko)](../images/timetable.gif)
 
-Les temps indiqués correspondent aux arrêts en gare. Lorsque deux heures sont indiquées pour une même gare (en gras), elles correspondent aux heures d'arrivée et de départ, sinon lorsqu'une seule heure est indiquée, le temps d'arrêt standard est de 3 minutes (le temps de décharger le courrier...).
+Les temps indiqués correspondent aux arrêts en gare. Lorsque deux heures sont indiquées pour une même gare (en gras), elles correspondent aux heures d'arrivée et de départ, sinon lorsqu'une seule heure est indiquée, le temps d'arrêt standard est de 3 minutes.
 
-J'ai pu déjà constater qu'il n'est pas si facile de tenir l'horaire car tout écart est démultiplié par le facteur d'accélération utilisé. Cela m'amène à penser qu'il faudrait maintenant que je réalise des essais avec un facteur 6, comme certains modélistes. Dans tous les reportages que j'ai pu lire sur ce sujet, les modélistes utilisent généralement un facteur de 6, 10 ou 12.
+J'ai pu déjà constater qu'il n'est pas si facile de tenir l'horaire car tout écart est démultiplié par le facteur d'accélération utilisé.
+Dans tous les reportages que j'ai pu lire sur ce sujet, les modélistes utilisent généralement un facteur de 4, 6, 10 ou 12.
 
 Autre point important, on ressent une certaine dilatation du temps pour tous les mouvements qui doivent être effectués en gare car là on doit réaliser les manoeuvres sur une échelle de temps non accélérée (on ne peut pas déplacer les wagons à toute vitesse) et on constate sur le tableau horaire des durées de une à deux heures pour manoeuvrer seulement quelques wagons.
-
-A l'avenir je vais essayer d'autres horaires avec plus de variété dans les types de relations.
 
 ### Liste de répartition des wagons {#switchlist}
 
@@ -325,4 +324,21 @@ J'utilise une désignation des wagons qui permet de les repérer facilement par 
 
 Pour ce formulaire, je me suis inspiré du formulaire de type _Switchlist_ présenté par Jack Burgess pour son [Yosemite Valley Railroad](http://www.yosemitevalleyrr.com), ainsi que des informations des formulaires proposés par le logiciel Ship It! Car Cards Version 1.0 from Albion Software. Je l'ai réalisé avec un tableur standard.
 
-Je vais essayer d'autres scénarios en y ajoutant des mouvements à réaliser dans ou entre les gares. Avec la commande digitale, je peux faire évoluer simultanément un train dans chaque sens, ou bien un train collecteur avec un train régulier.
+### Fiche Train {#fichetrain}
+
+Depuis 2025, j'expérimente un nouveau formulaire : la Fiche Train.
+
+Ce document est utilisé par le mécanicien pour réaliser son trajet de son origine à sa destination.
+C'est un document opérationnel qui consigne principalement la liste des points de passage le long du trajet associés aux horaires prévus de passage où d'arrêt.
+C'est un document standard de la SNCF, mais qui semble également utilisé sous une forme similaire dans d'autres pays.
+
+Désormais, j'utilise mon programme [YARS](/reseau/#yars) pour générer automatiquement une **version simplifiée** de cette fiche train pour chaque scénario de jeu.
+Les données restent décrites dans chaque fichier scénario et la mise en forme est réalisé par le programme.
+Mon but n'est pas de reproduire le document officiel de façon rigoureuse dans les simulations.
+Il s'agit plutôt de s'inspirer de ce type de document en le simplifiant de manière à s'adapter aux besoins d'une simulation avec un modèle réduit.
+
+![Fiche Train (162 Ko)](../images/fichetrain1.png)
+
+J'ai par exemple ajouté une colonne pour des observations/remarques à droite.
+Cela permet d'y inclure par exemple des indications concernant la répartition des wagons ! Ainsi, les documents utilisés pendant la simulation par le conducteur d'un train se simplifient car il peut trouver sur une même fiche les établissements à atteindre, et pour chacun, éventuellement les wagons à déposer ou à collecter, sans être obligé de faire un rapprochement manuel des deux types de documents que sont le tableau horaire et la liste de répartition des wagons.
+
