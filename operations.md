@@ -324,9 +324,9 @@ J'utilise une désignation des wagons qui permet de les repérer facilement par 
 
 Pour ce formulaire, je me suis inspiré du formulaire de type _Switchlist_ présenté par Jack Burgess pour son [Yosemite Valley Railroad](http://www.yosemitevalleyrr.com), ainsi que des informations des formulaires proposés par le logiciel Ship It! Car Cards Version 1.0 from Albion Software. Je l'ai réalisé avec un tableur standard.
 
-### Fiche Train {#fichetrain}
+### Fiche Train (2025) {#fichetrain}
 
-Depuis 2025, j'expérimente un nouveau formulaire : la Fiche Train.
+Je teste depuis fin 2025 un nouveau formulaire&nbsp;: la Fiche Train.
 
 Ce document est utilisé par le mécanicien pour réaliser son trajet de son origine à sa destination.
 C'est un document opérationnel qui consigne principalement la liste des points de passage le long du trajet associés aux horaires prévus de passage où d'arrêt.
@@ -337,8 +337,13 @@ Les données restent décrites dans chaque fichier scénario et la mise en forme
 Mon but n'est pas de reproduire le document officiel de façon rigoureuse dans les simulations.
 Il s'agit plutôt de s'inspirer de ce type de document en le simplifiant de manière à s'adapter aux besoins d'une simulation avec un modèle réduit.
 
-![Fiche Train (162 Ko)](../images/fichetrain1.png)
+![Fiche Train](../images/FICHE-TRAIN-PSL-MTE.jpg)
+Fiche Train pour un train de banlieue semi-direct allant de Paris à Mantes-la-Jolie.
 
-J'ai par exemple ajouté une colonne pour des observations/remarques à droite.
-Cela permet d'y inclure par exemple des indications concernant la répartition des wagons ! Ainsi, les documents utilisés pendant la simulation par le conducteur d'un train se simplifient car il peut trouver sur une même fiche les établissements à atteindre, et pour chacun, éventuellement les wagons à déposer ou à collecter, sans être obligé de faire un rapprochement manuel des deux types de documents que sont le tableau horaire et la liste de répartition des wagons.
+J'ai ajouté une colonne pour des observations/remarques à droite.
+Cela permet d'y inclure par exemple des indications concernant la répartition des wagons !
+Ainsi, les documents utilisés pendant la simulation par le conducteur d'un train se simplifient car il peut trouver sur une même fiche les établissements à atteindre, et pour chacun, éventuellement les wagons à déposer ou à collecter, sans être obligé de faire un rapprochement manuel des deux types de documents que sont le tableau horaire et la liste de répartition des wagons.
+
+![Fiche Train](../images/FICHE-TRAIN-LBT-MEL-test.jpg)
+Fiche Train pour un train de marchandises allant du triage du Bourget à Melun.
 
