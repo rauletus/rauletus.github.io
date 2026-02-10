@@ -80,4 +80,4 @@ C'est parti.
 
 * * *
 
-Conception et réalisation © 1998-2025 MRA
+Conception et réalisation © 1998-2026 MRA
