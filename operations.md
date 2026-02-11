@@ -337,13 +337,14 @@ Les données restent décrites dans chaque fichier scénario et la mise en forme
 Mon but n'est pas de reproduire le document officiel de façon rigoureuse dans les simulations.
 Il s'agit plutôt de s'inspirer de ce type de document en le simplifiant de manière à s'adapter aux besoins d'une simulation avec un modèle réduit.
 
+**Exemple pour un train de banlieue semi-direct allant de Paris à Mantes-la-Jolie :**
+
 ![Fiche Train](../images/FICHE-TRAIN-PSL-MTE.jpg)
-Fiche Train pour un train de banlieue semi-direct allant de Paris à Mantes-la-Jolie.
 
 J'ai ajouté une colonne pour des observations/remarques à droite.
 Cela permet d'y inclure par exemple des indications concernant la répartition des wagons !
 Ainsi, les documents utilisés pendant la simulation par le conducteur d'un train se simplifient car il peut trouver sur une même fiche les établissements à atteindre, et pour chacun, éventuellement les wagons à déposer ou à collecter, sans être obligé de faire un rapprochement manuel des deux types de documents que sont le tableau horaire et la liste de répartition des wagons.
 
-![Fiche Train](../images/FICHE-TRAIN-LBT-MEL-test.jpg)
-Fiche Train pour un train de marchandises allant du triage du Bourget à Melun.
+**Exemple pour un train de marchandises allant du triage du Bourget à Melun :**
 
+![Fiche Train](../images/FICHE-TRAIN-LBT-MEL-test.jpg)
