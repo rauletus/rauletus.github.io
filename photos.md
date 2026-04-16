@@ -68,7 +68,7 @@ En arrière plan, on distingue les bâtiments longeant la rue de la Gare, réali
 
   
 ![Vue rapprochée de la passerelle d'accés au quai central de la gare (hiver 2000)](../photos/garev9.jpg)  
-Vue rapporchée de la **passerelle d'accès au quai central** (hiver 2000), un modèle en plastique (Jouef) dont les pieds sont encastrés dans les quais réalisés en bois. Un percage très précis à été effectué pour obtenir un positionnement rigoureux des longs pieds métalliques de cette passerelle.
+Vue rapprochée de la **passerelle d'accès au quai central** (hiver 2000), un modèle en plastique (Jouef) dont les pieds sont encastrés dans les quais réalisés en bois. Un percage très précis à été effectué pour obtenir un positionnement rigoureux des longs pieds métalliques de cette passerelle.
 
   
 ![Vue de l'entrée / sortie de la gare du cété Est (hiver 2000)](../photos/gare_e1.jpg)  
