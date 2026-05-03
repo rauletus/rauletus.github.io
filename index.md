@@ -30,7 +30,7 @@ En parallèle, un logiciel de jeu simule en accéléré le déroulement d'une gr
 Ce projet a pour ambition de créer une proposition intermédiaire entre les simulateurs virtuels et celui des réseaux modèles physiques. Aujourd'hui, ces deux univers sont plutôt cloisonnés. D'un côté, nous trouvons souvent des modélistes qui aiment observer leurs trains tourner en boucle. De l'autre, les "gamers" se plongent dans des simulateurs 3D de trains en contexte entièrement virtuels sur PC et consoles, allant même jusqu'à des reproductions physiques de cabines de locomotives.
 Ma proposition crée une jonction inédite en associant un réseau miniature réel et connecté à un jeu de simulation digital. C'est une synergie unique qui combine le plaisir de la manipulation physique avec la richesse et l'interactivité d'un jeu vidéo. Vous n'etes plus un simple observateur : vous agissez, vous décidez, vous vivez l'expérience ferroviaire comme jamais auparavant.
 
-Alors, êtes-vous prêt à monter à bord de cette nouvelle aventure ?
+Alors, êtes-vous prêt à monter à bord de cette nouvelle aventure ? 
 
 C'est parti.
 
